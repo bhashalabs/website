@@ -1,62 +1,31 @@
 # Bhasha Labs
 
-### AI for India's languages.
+**AI for India's languages.**
 
-Bhasha Labs is an independent technology initiative exploring practical
-AI systems for India's multilingual environment.
+Bhasha Labs is an independent, early-stage technology initiative
+exploring practical AI for India's multilingual environment.
 
-We are interested in the intersection of:
+## Areas of exploration
 
 - Multilingual AI
-- Natural Language Processing
-- English–Indic code-mixed language
-- Romanized Indic languages
-- Language datasets and evaluation
-- AI applications for Indian languages
+- English–Indic code-mixed natural language processing
+- Romanized Indic language understanding
+- Multilingual data, model evaluation, and experimentation
 
-## Current Focus
+## Initial focus
 
-Our initial exploration focuses on **code-mixed and informal multilingual
-communication**.
+Our initial focus is on understanding informal multilingual
+communication, including language mixing, transliteration,
+and variations in Romanized Indic spelling.
 
-People frequently combine English and Indic languages in digital
-communication, often using Romanized spellings and highly variable forms.
-
-For example:
-
-> Kal college jaana hai but assignment abhi complete nahi hua.
-
-We are exploring how language models and datasets can better understand
-this kind of natural communication.
-
-## Areas of Exploration
-
-### Multilingual AI
-
-Exploring AI systems that can work across India's diverse linguistic
-landscape.
-
-### Code-Mixed NLP
-
-Understanding language where multiple languages appear within the same
-conversation or sentence.
-
-### Romanized Indic
-
-Studying Indic languages written using Latin characters, including
-informal and highly variable spellings.
+We are currently in an exploratory stage, investigating approaches
+and potential applications in language-focused AI.
 
 ## Website
 
-The Bhasha Labs website is available at:
+https://bhashalabs.com
 
-**https://bhashalabs.com**
+## Status
 
-## GitHub
-
-This organization contains experiments, prototypes, datasets, and
-research-oriented projects developed as Bhasha Labs evolves.
-
----
-
-_Bhasha Labs — AI for India's languages._
+Bhasha Labs is an independent technology initiative. The work and
+technical direction are evolving as we explore the problem space.
