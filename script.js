@@ -1,14 +1,35 @@
-// Automatically update the copyright year
-document.getElementById("year").textContent = new Date().getFullYear();
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const currentYear = document.querySelector("#current-year");
 
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
 
-// Add a subtle shadow to the navbar while scrolling
-const navbar = document.querySelector(".navbar");
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-        navbar.style.boxShadow = "0 5px 25px rgba(0, 0, 0, 0.05)";
-    } else {
-        navbar.style.boxShadow = "none";
-    }
-});
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation" : "Open navigation"
+        );
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation");
+        });
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            navLinks.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation");
+        }
+    });
+}
